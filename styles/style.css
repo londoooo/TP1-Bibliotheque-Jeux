@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #048b22;
     color: #000000;
     min-height: 100vh;
     display: flex;
@@ -23,9 +23,9 @@ p, span { font-size: 1rem; }
     padding: 0 2em;
 }
 
-/* En-tête fixe avec position sticky et z-index vus au cours */
+/* En-tête fixe avec position sticky et z-index  */
 header {
-    background-color: #e5e5e5;
+    background-color: #ece8e8;
     height: 60px;
     position: sticky;
     top: 0;
@@ -43,7 +43,7 @@ header {
 .logo-cercle {
     width: 40px;
     height: 40px;
-    background-color: #999999;
+    background-color: #000000;
     border-radius: 50%;
 }
 
@@ -61,7 +61,6 @@ header {
     text-decoration: none;
     font-size: 1.5rem;
     color: #000000;
-    /* Transition requise par l'énoncé du TP */
     transition: color 0.3s ease;
     display: block;
 }
@@ -69,8 +68,8 @@ header {
 /* Changement de couleur simple au survol et au focus */
 .nav-bureau a:hover,
 .nav-bureau a:focus-visible {
-    color: #666666;
-    outline: 2px solid #000000;
+    color: #0f0f0f;
+    outline: 2px solid #0e0d0d;
 }
 
 .droite-container {
@@ -92,7 +91,7 @@ main {
     padding-bottom: 3em;
 }
 
-/* Grille Bureau : 6 colonnes avec flex-wrap */
+/* Grille Bureau des colonnes avec flex-wrap */
 .grille-jeux {
     display: flex;
     flex-wrap: wrap;
@@ -117,7 +116,7 @@ main {
 
 .carte-jeu:hover,
 .carte-jeu:focus-visible {
-    background-color: #bfbfbf;
+    background-color: #f1e7e7;
     outline: 3px solid #000000;
 }
 
@@ -132,7 +131,7 @@ main {
 .bloc-gris-image {
     width: 50%;
     height: 300px; /* Remplacement de aspect-ratio par une hauteur fixe */
-    background-color: #d9d9d9;
+    background-color: #0f0606;
     border-radius: 8px;
 }
 .details-texte { width: 50%; }
@@ -140,7 +139,6 @@ main {
 
 /* Maquette Mobile avec la syntaxe media-query du cours */
 @media screen and (width <= 900px) {
-    /* La propriété display: none vue dans l'exercice du menu de la semaine 4 */
     .nav-bureau, .heure { display: none; }
     .menu-mobile { display: block; }
 
@@ -158,4 +156,23 @@ main {
     
     .details-contenu { flex-direction: column; }
     .bloc-gris-image, .details-texte { width: 100%; }
+
+    
+}
+.image-jeu {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 0.5em;
+}
+
+.icone-menu {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }

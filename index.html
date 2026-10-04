@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <title>Bibliothèque de Jeux</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -13,14 +15,30 @@
                 <div class="logo-cercle" tabindex="0" aria-label="Logo"></div>
             </div>
             
-            <nav class="nav-bureau">
-                <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="index.html">Bibliothèque</a></li>
-                    <li><a href="#">Paramètres</a></li>
-                    <li><a href="#">Panier</a></li>
-                </ul>
-            </nav>
+           <nav class="nav-bureau">
+    <ul>
+        <li>
+            <a href="index.html" aria-label="Accueil">
+                <img src="images/pngegg (1).png" alt="Accueil" class="icone-menu">
+            </a>
+        </li>
+        <li>
+            <a href="index.html" aria-label="Bibliothèque">
+                <img src="images/controller-icon-32410.png" alt="Bibliothèque" class="icone-menu">
+            </a>
+        </li>
+        <li>
+            <a href="#" aria-label="Paramètres">
+                <img src="images/settings-icon-14954.png" alt="Paramètres" class="icone-menu">
+            </a>
+        </li>
+        <li>
+            <a href="#" aria-label="Panier">
+                <img src="images/shopping-cart.png" alt="Panier" class="icone-menu">
+            </a>
+        </li>
+    </ul>
+</nav>
             
             <div class="droite-container">
                 <div class="heure">14:38</div>
@@ -35,6 +53,7 @@
         <div class="grille-jeux">
             <!-- Jeu principal menant vers la page jeu.html -->
             <a href="jeu.html" class="carte-jeu">
+                <img src="images/apex.jpg" alt="Affiche de Apex Legends" class="image-jeu">
                 <span class="titre-jeu">Apex Legends</span>
                 <span class="desc-jeu">Jeu Battle Royale.</span>
             </a>
